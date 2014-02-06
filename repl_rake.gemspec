@@ -8,8 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = ReplRake::VERSION
   spec.authors       = ["Zander Hill"]
   spec.email         = ["Zander@civet.ws"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Creates a `rake console` task with either Pry or Irb}
   spec.homepage      = ""
   spec.license       = "MIT"
 
