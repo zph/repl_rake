@@ -16,16 +16,18 @@ Or install it yourself as:
 
     $ gem install repl_rake
 
-    Then in gem folder add this to Rakefile
-
-    spec = Gem::Specification.find_by_name 'repl_rake'
-    load "#{spec.gem_dir}/tasks/deploy.rake"
-
-    Credit: https://stackoverflow.com/questions/15446153/ruby-rake-load-tasks-from-a-gem
-
 ## Usage
 
-TODO: Write usage instructions here
+Then in gem folder add this to Rakefile
+
+    require 'repl_rake'
+    ReplRake.setup
+
+## Credits
+
+Credits: 
+- Origin of Idea: http://erniemiller.org/2014/02/05/7-lines-every-gems-rakefile-should-have/#comment-1232335498
+- Rake tasks require solution: https://stackoverflow.com/questions/15446153/ruby-rake-load-tasks-from-a-gem
 
 ## Contributing
 
