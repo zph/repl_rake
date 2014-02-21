@@ -1,3 +1,4 @@
+desc "Starts a repl console and requires the gem"
 task :console do
   require 'irb'
   require 'irb/completion'
