@@ -1,12 +1,16 @@
 require "repl_rake/version"
 require 'rake'
 
+ALIAS_INSTANCE_VARS_TO_LOCAL = ->() do
+  #TODO:
+end
+
 module ReplRake
 
   def self.load_config
-    file = ".repl_rake.rb"
+    file = File.join(Dir.pwd, ".repl_rake.rb")
     return unless File.exists?(file)
-    load file
+    file
   end
 
   def self.setup
