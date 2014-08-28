@@ -1,6 +1,6 @@
 # ReplRake
 
-TODO: Write a gem description
+Putting Repl Driven Development in your hands.
 
 ## Installation
 
@@ -22,6 +22,11 @@ Then in gem folder add this to Rakefile
 
     require 'repl_rake'
     ReplRake.setup
+
+Use the command
+    rake console
+
+Any ruby code in `.repl_rake.rb` will be loaded into you pry session after the base gem is required.
 
 ## Credits
 

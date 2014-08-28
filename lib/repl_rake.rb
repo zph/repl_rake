@@ -3,6 +3,12 @@ require 'rake'
 
 module ReplRake
 
+  def self.load_config
+    file = ".repl_rake.rb"
+    return unless File.exists?(file)
+    load file
+  end
+
   def self.setup
     gem_spec = Gem::Specification.new(Dir["*.gemspec"].first)
     $calling_gem_name = gem_spec.name.split('.').first
